@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:id="@+id/contianer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/basic_transition"
+            style="@style/Main_Button"
+            android:text="过渡动画基础"
+            android:transitionName="a"
+            />
+
+        <Button
+            android:id="@+id/delay_transition"
+            style="@style/Main_Button"
+            android:text="延迟过渡动画" />
+
+        <Button
+            android:id="@+id/custom_transition"
+            style="@style/Main_Button"
+            android:text="自定义Transition" />
+
+        <Button
+            android:id="@+id/view_overlay"
+            style="@style/Main_Button"
+            android:text="ViewOverlay" />
+
+        <Button
+            android:id="@+id/overridePendingTransition"
+            style="@style/Main_Button"
+            android:text="OverridePendingTransition(低于21)" />
+
+        <Button
+            android:id="@+id/content_Transition"
+            style="@style/Main_Button"
+            android:text="页面内容过渡动画" />
+
+        <View
+            android:id="@+id/share_Transition"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@android:color/holo_red_dark"
+            android:transitionName="share" />
+        
+    </LinearLayout>
+</ScrollView>
