@@ -45,10 +45,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         content_Transition.setOnClickListener {
-            ViewCompat.setTransitionName(content_Transition,"postButton");
             var intent = Intent(this,ContentTransition::class.java)
-            intent.putExtra("postButton","postButton")
-            var pair = Pair.create(content_Transition as View,"postButton")
             startActivity(
                 intent,
                 /*这个参数会使setTransiton中的动画有效果*/
@@ -61,7 +58,13 @@ class MainActivity : AppCompatActivity() {
                 Intent(this@MainActivity, ShareElementTransition::class.java),
                 ActivityOptions.makeSceneTransitionAnimation(this, share_Transition, "share").toBundle()
             )
+            /*这里设置 share_Transition 会先变成这个颜色 再跳转 */
             share_Transition.setBackgroundColor(ContextCompat.getColor(this,R.color.colorAccent))
+        }
+
+        btn_list_share.setOnClickListener {
+            var intent = Intent(this,RecyclerViewShareElementActivity::class.java)
+            startActivity(intent)
         }
     }
 

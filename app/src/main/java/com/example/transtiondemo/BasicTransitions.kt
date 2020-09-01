@@ -46,12 +46,12 @@ class BasicTransitions : AppCompatActivity(){
 
     private fun defaultTransitionA() {
         val scene2 = Scene.getSceneForLayout(rootView, R.layout.scene2, this@BasicTransitions)
-        TransitionManager.go(scene2, ChangeBounds())
+        TransitionManager.go(scene2, ChangeColor())
     }
 
     private fun defaultTransitionB() {
         val scene2 = Scene.getSceneForLayout(rootView, R.layout.scene3, this@BasicTransitions)
-        TransitionManager.go(scene2, ChangeBounds())
+        TransitionManager.go(scene2, ChangeColor())
     }
 
     private fun addTarget() {

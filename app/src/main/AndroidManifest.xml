@@ -23,6 +23,8 @@
         <activity android:name=".ViewOverlayActivity"/>
         <activity android:name=".ContentTransition"/>
         <activity android:name=".ShareElementTransition"/>
+        <activity android:name=".RecyclerViewShareElementActivity"/>
+        <activity android:name=".RvShareElementActivity"/>
     </application>
 
 </manifest>
